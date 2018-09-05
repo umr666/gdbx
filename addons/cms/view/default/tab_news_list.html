@@ -1,0 +1,44 @@
+{layout name="common/layout" /}
+<div class="main-box">
+    {cms:block name="banner_news" cache="60"}
+    <div class="container"  id="content-container">
+        <h1 class="clearfix">
+            <ol class="breadcrumb pull-left">
+                <!-- S 面包屑导航 -->
+                {cms:breadcrumb id="item"}
+                <li>{if  condition="($i eq count($__LIST__)) or ($item['disabled'] neq 0)"}{$item.name}{else /}<a href="{$item.url}">{$item.name}</a>{/if}</li>
+                {/cms:breadcrumb}
+                <!-- E 面包屑导航 -->
+            </ol>
+        </h1>
+
+        <div class="tab-body">
+            <ul class="tab-nav clearfix">
+                {cms:channellist id="channel" type="son" typeid="$__CHANNELP__.id" orderway="asc" cache="60"}
+                    <li class="tab-nav-item {if $channel.id == $__CHANNEL__.id}active{/if}"><a href="{:url('/cms',array('c'=>$channel['diyname']))}">{$channel.name}</a></li>
+                {/cms:channellist}
+            </ul>
+        </div>
+        <div class="tab-news">
+            <ul class="tab-news-list">
+                {cms:pagelist id="item"}
+                    <li class="tab-news-item clearfix">
+                        <div class="news-img"><a href="{:url('/cms',array('a'=>$item['id']))}"><img src="{$item.image}" alt=""></a></div>
+                        <div class="news-info">
+                            <h3 class="news-info-header nowrap">
+                                <a href="{:url('/cms',array('a'=>$item['id']))}">{$item.title}</a>
+                                <div class="date">{$item.createtime|date='Y-m-d',###}</div>
+                            </h3>
+                            <div class="news-info-description">{$item.description}</div>
+                        </div>
+                    </li>
+                {/cms:pagelist}
+            </ul>
+            <!-- S 分页栏 -->
+                <div class="text-center">
+                    {cms:pageinfo type="full" /}
+                </div>
+                <!-- E 分页栏 -->
+        </div>
+    </div>
+</div>

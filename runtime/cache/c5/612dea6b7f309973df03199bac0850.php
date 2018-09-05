@@ -1,0 +1,8 @@
+<?php
+//000000000000
+ exit();?>
+a:3:{i:0;a:21:{s:2:"id";i:136;s:8:"model_id";i:1;s:4:"name";s:6:"author";s:4:"type";s:6:"string";s:5:"title";s:6:"作者";s:7:"content";s:28:"value1|title1
+value2|title2";s:12:"defaultvalue";s:0:"";s:4:"rule";s:0:"";s:3:"msg";s:0:"";s:2:"ok";s:0:"";s:3:"tip";s:0:"";s:8:"decimals";i:0;s:6:"length";i:255;s:7:"minimum";i:0;s:7:"maximum";i:0;s:6:"extend";s:0:"";s:5:"weigh";i:136;s:10:"createtime";i:1508990735;s:10:"updatetime";i:1508991985;s:8:"isfilter";i:1;s:6:"status";s:6:"normal";}i:1;a:21:{s:2:"id";i:137;s:8:"model_id";i:1;s:4:"name";s:4:"area";s:4:"type";s:6:"select";s:5:"title";s:6:"地区";s:7:"content";s:46:"domestic|国内
+overseas|国外
+local|本地";s:12:"defaultvalue";s:0:"";s:4:"rule";s:0:"";s:3:"msg";s:0:"";s:2:"ok";s:0:"";s:3:"tip";s:0:"";s:8:"decimals";i:0;s:6:"length";i:255;s:7:"minimum";i:0;s:7:"maximum";i:0;s:6:"extend";s:0:"";s:5:"weigh";i:137;s:10:"createtime";i:1508990746;s:10:"updatetime";i:1523723221;s:8:"isfilter";i:1;s:6:"status";s:6:"normal";}i:2;a:21:{s:2:"id";i:138;s:8:"model_id";i:1;s:4:"name";s:6:"device";s:4:"type";s:5:"radio";s:5:"title";s:6:"设备";s:7:"content";s:32:"vr|智能设备
+ar|虚拟设备";s:12:"defaultvalue";s:0:"";s:4:"rule";s:8:"required";s:3:"msg";s:0:"";s:2:"ok";s:0:"";s:3:"tip";s:0:"";s:8:"decimals";i:0;s:6:"length";i:255;s:7:"minimum";i:0;s:7:"maximum";i:0;s:6:"extend";s:0:"";s:5:"weigh";i:138;s:10:"createtime";i:1508992093;s:10:"updatetime";i:1508992093;s:8:"isfilter";i:1;s:6:"status";s:6:"normal";}}

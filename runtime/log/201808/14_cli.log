@@ -1,0 +1,3 @@
+[ 2018-08-14T15:19:16+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001631s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-08-14T15:19:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'test' [ RunTime:0.022972s ]
+[ 2018-08-14T15:19:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_test' [ RunTime:0.009873s ]

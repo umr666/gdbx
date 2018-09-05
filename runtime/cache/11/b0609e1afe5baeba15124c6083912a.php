@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+s:871:"<li class=" " value=53  ><a data-toggle="" data-target="#" href="/cms/c/information.html">走进邦鑫 </a> </li><li class="dropdown link-disabled" value=54  ><a data-toggle="dropdown" data-target="#" href="/cms/c/news.html">新闻中心 <span class="caret"></span></a> <ul class="dropdown-menu" role="menu"><li class=" " value=56  ><a data-toggle="" data-target="#" href="/cms/c/news_bx.html">公司新闻 </a> </li><li class=" " value=57  ><a data-toggle="" data-target="#" href="/cms/c/dongtai.html">行业动态 </a> </li><li class=" " value=83  ><a data-toggle="" data-target="#" href="/cms/c/wenhua.html">文化视窗 </a> </li></ul></li><li class=" " value=85  ><a data-toggle="" data-target="#" href="/cms/c/resolve.html">产品与解决方案 </a> </li><li class=" " value=76  ><a data-toggle="" data-target="#" href="/cms/c/contact.html">联系我们 </a> </li>";

@@ -1,0 +1,63 @@
+{layout name="common/layout" /}
+<div class="main-box">
+    {switch name="__CHANNELP__.diyname" }
+        {case value="resolve" break="0或1"}{cms:block name="banner_resolve"}{/case}
+        {case value="information"}{cms:block name="banner_information"}{/case}
+        {case value="contact"}{cms:block name="banner_contact"}{/case}
+    {/switch}
+    {if condition="$isloadmap eq true"}
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=LROQRa8CdZEQ2rzz1Av3Xj3f"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#allmap').parent().addClass('allmap-parent');
+            // 百度地图API功能
+            var map = new BMap.Map("allmap");
+            var point = new BMap.Point(113.369836,23.102247);
+            var marker = new BMap.Marker(point);  // 创建标注
+            map.addOverlay(marker);              // 将标注添加到地图中
+            map.centerAndZoom(point, 15);
+            var opts = {
+              width : 350,     // 信息窗口宽度
+              height: 80,     // 信息窗口高度
+              offset: new BMap.Size(0, -15),
+              enableMessage:true,//设置允许信息窗发送短息
+              message:""
+            }
+            var infoWindow = new BMap.InfoWindow("地址：广州琶洲会展中心凤浦中路679号广交会大厦14层", opts);  // 创建信息窗口对象
+            map.openInfoWindow(infoWindow,point);
+            marker.addEventListener("click", function(){
+                map.openInfoWindow(infoWindow,point); //开启信息窗口
+            });
+            map.enableScrollWheelZoom(true);
+        })
+    </script>
+    {/if}
+    <div class="container"  id="content-container">
+        <h1 class="clearfix">
+            <ol class="breadcrumb pull-left">
+                <!-- S 面包屑导航 -->
+                {cms:breadcrumb id="item"}
+                <li>{if  condition="($i eq count($__LIST__)) or ($item['disabled'] neq 0)"}{$item.name}{else /}<a href="{$item.url}">{$item.name}</a>{/if}</li>
+                {/cms:breadcrumb}
+                <!-- E 面包屑导航 -->
+            </ol>
+        </h1>
+
+        <div class="tab-body">
+            <ul class="tab-nav clearfix">
+                {cms:pagelist id="item"}
+                    <li class="tab-nav-item {if $notchannel}{if $item['id'] == $__ARCHIVES__['id']}active{/if}{/if}"><a href="{:url('/cms',array('a'=>$item['id']))}">{$item.title}</a></li>
+                {/cms:pagelist}
+            </ul>
+
+            {if $notchannel}
+            <div class="tab-content">
+                <h3 class="tab-content-title">{cms:archives name="title"}</h3>
+                <div class="tab-content-main">
+                    {cms:archives name="content"}
+                </div>
+            </div>
+            {/if}
+        </div>
+    </div>
+</div>

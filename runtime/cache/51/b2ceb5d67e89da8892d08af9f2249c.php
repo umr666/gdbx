@@ -1,0 +1,4 @@
+<?php
+//000000000000
+ exit();?>
+a:10:{i:0;a:4:{s:2:"id";i:284;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:1;a:4:{s:2:"id";i:292;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:2;a:4:{s:2:"id";i:293;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:3;a:4:{s:2:"id";i:294;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:4;a:4:{s:2:"id";i:295;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:5;a:4:{s:2:"id";i:296;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:6;a:4:{s:2:"id";i:297;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:7;a:4:{s:2:"id";i:298;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:8;a:4:{s:2:"id";i:299;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}i:9;a:4:{s:2:"id";i:300;s:6:"author";s:0:"";s:4:"area";s:8:"domestic";s:6:"device";s:2:"vr";}}

@@ -1,0 +1,21 @@
+{layout name="common/layout" /}
+<div class="main-box">
+    {cms:block name="banner_news" cache="60"}
+
+    <div class="container"  id="content-container">
+        <h1 class="clearfix">
+            <ol class="breadcrumb pull-left">
+                <!-- S 面包屑导航 -->
+                {cms:breadcrumb id="item"}
+                <li>{if  condition="($i eq count($__LIST__)) or ($item['disabled'] neq 0)"}{$item.name}{else /}<a href="{$item.url}">{$item.name}</a>{/if}</li>
+                {/cms:breadcrumb}
+                <!-- E 面包屑导航 -->
+            </ol>
+        </h1>
+        <div class="content-box">
+            <h3 class="content-title">{cms:archives name="title" /}</h3>
+            <div class="content-date">发布时间：{cms:archives name="createtime|datetime"}</div>
+            <div class="content">{cms:archives name="content" /}</div>
+        </div>
+    </div>
+</div>

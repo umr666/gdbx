@@ -1,0 +1,14 @@
+<div class="footer-contact">
+    <h3 class="footer-title">联系我们</h3>
+    <div class="footer-contact-item">联系邮箱：bangxincommerce@126.com</div>
+    <div class="footer-contact-item">联系电话：020-84044608</div>
+    <div class="footer-contact-item">公司地址：广州琶洲会展中心凤浦中路679号广交会大厦14层</div>
+</div>
+<div class="friend-link">
+    <h3 class="footer-title">友情链接</h3>
+    <ul class="friend-link-list">
+        {cms:blocklist name="friend_link" id="item" orderway="asc"}
+            <li class="friend-link-item"><a href="{$item.url}" target="_blank">{$item.title}</a></li>
+        {/cms:blocklist}
+    </ul>
+</div>

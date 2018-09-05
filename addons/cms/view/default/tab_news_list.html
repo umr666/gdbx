@@ -15,7 +15,7 @@
         <div class="tab-body">
             <ul class="tab-nav clearfix">
                 {cms:channellist id="channel" type="son" typeid="$__CHANNELP__.id" orderway="asc" cache="60"}
-                    <li class="tab-nav-item {if $channel.id == $__CHANNEL__.id}active{/if}"><a href="{:url('/cms',array('c'=>$channel['diyname']))}">{$channel.name}</a></li>
+                    <li class="tab-nav-item {if $channel.id == $__CHANNEL__.id}active{/if}"><a href="{:url('/',array('c'=>$channel['diyname']))}">{$channel.name}</a></li>
                 {/cms:channellist}
             </ul>
         </div>
@@ -23,7 +23,7 @@
             <ul class="tab-news-list">
                 {cms:pagelist id="item"}
                     <li class="tab-news-item clearfix">
-                        <div class="news-img"><a href="{:url('/cms',array('a'=>$item['id']))}"><img src="{$item.image}" alt=""></a></div>
+                        <div class="news-img"><a href="{:url('/',array('a'=>$item['id']))}"><img src="{$item.image}" alt=""></a></div>
                         <div class="news-info">
                             <h3 class="news-info-header nowrap">
                                 <a href="{:url('/cms',array('a'=>$item['id']))}">{$item.title}</a>

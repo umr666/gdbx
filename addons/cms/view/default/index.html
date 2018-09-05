@@ -37,7 +37,7 @@
                 <div class="img-news-box">
                     {cms:blocklist id="block" name="news_img" row="2"}
                         <div class="img-news-block">
-                            <a href="{:url('/cms',array('a'=>$block['url']))}">
+                            <a href="{:url('/',array('a'=>$block['url']))}">
                                 <img src="{$block.image}" alt="">
                             </a>
                             <div class="img-news-block-title">{$block.title}</div>
@@ -60,7 +60,7 @@
                             <ul class="index-news-list">
                                 {cms:arclist id="new" row="6" orderby="createtime" orderway="desc" channel="$channel.id"}
                                 <li class="index-news-item"><img src="__ADDON__/img/new_arrow.gif">
-                                    <a href="{:url('/cms',array('a'=>$new.id))}">{$new.title}</a>
+                                    <a href="{:url('/',array('a'=>$new.id))}">{$new.title}</a>
                                     <div class="new-date">{$new.createtime | date="Y-m-d",###}</div>
                                 </li>
                                 {/cms:arclist}
@@ -77,7 +77,7 @@
                     <div class="contact-title">联系我们</div>
                     <div style="color: #4A6DBC">CONTACT US</div>
                     <img src="__ADDON__/img/map.png" alt="">
-                    <a href="{:url('/cms',array('c'=>'contact'))}" class="contact-link">查看更多</a>
+                    <a href="{:url('/',array('c'=>'contact'))}" class="contact-link">查看更多</a>
                 </div>
                 <div class="index-ad">
                     <div class="img-news-ad-list">
@@ -90,7 +90,7 @@
                     </div>
                     <div class="index-about">
                         <div class="index-about-link">
-                            <a href="{:url('/cms',array('a'=>'aptitudes'))}" class="clearfix">
+                            <a href="{:url('/',array('a'=>'aptitudes'))}" class="clearfix">
                                 <img src="__ADDON__/img/aptitudes.png" alt="" class="pull-left">
                                 <div class="about-link-title pull-left">
                                     <div class="title-cn">资质证书</div>
@@ -99,7 +99,7 @@
                             </a>
                         </div>
                         <div class="index-about-link">
-                            <a href="{:url('/cms',array('a'=>'history'))}" class="clearfix">
+                            <a href="{:url('/',array('a'=>'history'))}" class="clearfix">
                                 <img src="__ADDON__/img/reward.png" alt="" class="pull-left">
                                 <div class="about-link-title pull-left">
                                     <div class="title-cn">企业荣誉</div>

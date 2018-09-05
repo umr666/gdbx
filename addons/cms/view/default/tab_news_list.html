@@ -26,7 +26,7 @@
                         <div class="news-img"><a href="{:url('/',array('a'=>$item['id']))}"><img src="{$item.image}" alt=""></a></div>
                         <div class="news-info">
                             <h3 class="news-info-header nowrap">
-                                <a href="{:url('/cms',array('a'=>$item['id']))}">{$item.title}</a>
+                                <a href="{:url('/',array('a'=>$item['id']))}">{$item.title}</a>
                                 <div class="date">{$item.createtime|date='Y-m-d',###}</div>
                             </h3>
                             <div class="news-info-description">{$item.description}</div>
